@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #9c9c9c;
+}
+
+.all-usr{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info{
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 80%;
+  margin-top: 4%;
+  background-color: rgb(214, 214, 214);
+  border-radius: 15px;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+
+
+}
+
+.img-container{
+
+  height: 100%;
+  width: 20%;
+  /* border: solid; */
+}
+.image{
+  height:80%;
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px rgb(175, 175, 175);
+  border :solid;
+  border-width: 3px;
+  border-color: rgb(223, 223, 223);
+  
+  /* margin: 2%; */
+  
+}
+
+.username-container{
+
+height: 100%;
+width:60%;
+
+/* background-color: gray; */
+}
+.username{
+
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  padding-left: 10%;
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+background-color: rgb(237, 237, 237);
+border-radius: 30px;
+
+}
+
+
+.link{
+  width: 100%;
+  text-align: left;
+  padding-left: 10%;
+  background-color: rgb(237, 237, 237);
+  border-radius: 30px;
+}
+
+
