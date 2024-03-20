@@ -12,9 +12,11 @@ function App() {
 
   document.title = "users";
   useEffect(()=>{
+    let control = new AbortController();
+    let signal = console.signal;
     let req = new Request ("https://api.github.com/users",{ method: "GET"});
     const loadData = async ()=>{
-      const result = await fetch(req).
+      const result = await fetch(req,{signal:signal}).
       then(res =>{
         if (!res.ok)
          throw new Error(res.statusText);
@@ -26,6 +28,11 @@ function App() {
       setUsers(result);
       }
     loadData();
+
+
+    return () =>{
+          control.abort();
+    }
   },[]);
 
 
